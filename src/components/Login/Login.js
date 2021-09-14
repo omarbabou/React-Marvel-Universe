@@ -73,6 +73,10 @@ const Login = (props) => {
               <Link className="simpleLink" to="/signup">
                 Not yet registered ? Sign up.
               </Link>
+              <br />
+              <Link className="simpleLink" to="/forgetpassword">
+                Fogot your password ? Recover password here.
+              </Link>
             </div>
           </div>
         </div>

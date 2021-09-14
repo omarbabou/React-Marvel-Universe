@@ -7,6 +7,7 @@ import Welcome from "../Welcome/Welcome";
 import Login from "../Login/Login";
 import Signup from "../Signup/Signup";
 import ErrorPage from "../ErrorPage/ErrorPage";
+import ForgetPassword from "../ForgetPassword/ForgetPassword";
 import "../../App.css";
 // import { FirebaseProvider } from "../Firebase/context";
 // import Firebase from "../Firebase/firebase";
@@ -14,7 +15,6 @@ import "../../App.css";
 function App() {
   return (
     <Router>
-      {/* <FirebaseProvider value={new Firebase()}> */}
       <Header />
 
       <Switch>
@@ -22,11 +22,11 @@ function App() {
         <Route path="/welcome" component={Welcome} />
         <Route path="/login" component={Login} />
         <Route path="/signup" component={Signup} />
+        <Route path="/forgetpassword" component={ForgetPassword} />
         <Route component={ErrorPage} />
       </Switch>
 
       <Footer />
-      {/* </FirebaseProvider> */}
     </Router>
   );
 }
