@@ -4,7 +4,6 @@ import { FirebaseContext } from "../Firebase";
 
 const ForgetPassword = (props) => {
   const firebase = useContext(FirebaseContext);
-  console.log(firebase);
 
   const [email, setEmail] = useState("");
   const [success, setSuccess] = useState(null);
